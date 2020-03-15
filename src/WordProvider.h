@@ -43,5 +43,6 @@ public:
 
 class ContinousWordProvider : public WordProvider
 {
-
+public:
+  ContinousWordProvider(const Input & input);
 };

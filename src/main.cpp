@@ -1,4 +1,5 @@
 #include "Application.h"
+#include "Config.h"
 #include "CurrModeHandler.h"
 #include "EventHandler.h"
 #include "Input.h"
@@ -10,10 +11,8 @@
 int main(int argc, char **argv) 
 {    
   Params params(argc, argv);
-
-  Input input(params.getWordsFiles());
-  //RepeatWordProvider provider(input, 5);
-  RandomWordProvider provider(input, 50, 4, 6);
+  Config config(params.getConfigFile());
+  WordProvider& provider = config.getWordProvider(); 
   TimeStats stats(provider.total());
   Application app;
   EventHandler eventHadler;

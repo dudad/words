@@ -3,8 +3,10 @@ cmake_minimum_required(VERSION 3.10)
 # set the project name
 project(words)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 # add the executable
-add_executable(words main.cpp Application.cpp CurrModeHandler.cpp EventHandler.cpp Input.cpp Mode.cpp Params.cpp TimeStats.cpp WordProvider.cpp)
+add_executable(words main.cpp Application.cpp Config.cpp CurrModeHandler.cpp EventHandler.cpp Input.cpp Mode.cpp Params.cpp TimeStats.cpp WordProvider.cpp)
 
 INCLUDE(FindPkgConfig)
 

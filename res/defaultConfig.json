@@ -1,0 +1,9 @@
+{  
+  "mode":{  
+     "name":"random",
+     "min": 4,
+     "max": 6,
+     "amount" : 90
+  },
+  "input-files":["Calineczka.txt"]
+}

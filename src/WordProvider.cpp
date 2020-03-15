@@ -77,3 +77,10 @@ RepeatWordProvider::RepeatWordProvider(const Input & input, uint64_t repeat)
       m_words.push_back(word);
   }
 }
+
+
+ContinousWordProvider::ContinousWordProvider(const Input & input)
+{
+  for(auto word: input.getWords())
+    m_words.push_back(word);
+}

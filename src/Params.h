@@ -7,8 +7,8 @@ class Params
 {
 public:
   Params(int argc, char **argv);
-  std::vector<std::string> getWordsFiles() const { return m_words;}
-private:
-  std::vector<std::string> m_words;
+  std::string getConfigFile(){ return m_strConfigFile; }
 
+private:
+  std::string m_strConfigFile;
 };
